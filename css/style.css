@@ -1,4 +1,7 @@
 #balrog {
+    position:fixed;
+    bottom:50%; right:50%;
     width:160px; height:96px;
+    margin:-48px -80px;
     background:url('../i/balrog.png') 0 -288px;
     }
