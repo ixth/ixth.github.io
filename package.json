@@ -1,0 +1,25 @@
+{
+  "name": "ixth.github.io",
+  "author": "ixth <ainop@ya.ru>",
+  "license": "ISC",
+  "version": "1.0.0",
+  "description": "My very own github page",
+  "main": "index.html",
+  "dependencies": {
+    "craftyjs": "^0.7.1",
+    "http-server": "^0.9.0"
+  },
+  "scripts": {
+    "start": "http-server -a 127.0.0.1 -p 8080",
+    "build": "cp node_modules/craftyjs/dist/crafty-min.js src/lib/",
+    "clean": "git clean -f src/lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ixth/ixth.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ixth/ixth.github.io/issues"
+  },
+  "homepage": "https://ixth.github.io/"
+}
