@@ -1,23 +1,16 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
     entry: 'index',
     resolve: {
         modules: [path.resolve(__dirname, 'src/js'), 'node_modules'],
     },
-    module: {
-        // rules: [
-        //     {
-        //         test: /\.html$/,
-        //         include: path.resolve(__dirname, 'src'),
-        //         use: 'html-loader',
-        //     }
-        // ],
-    },
     plugins: [
-        new HtmlWebpackPlugin({
-            template: 'src/index.html',
-        }),
+        new CleanWebpackPlugin(['dist/*'], { watch: true }),
+        new HtmlWebpackPlugin({ template: 'src/index.html' }),
+        new CopyWebpackPlugin([{ from: 'src/assets', to: 'assets' }]),
     ],
 };
