@@ -3,16 +3,14 @@
   "author": "ixth <ainop@ya.ru>",
   "license": "ISC",
   "version": "1.0.0",
-  "description": "My very own github page",
+  "description": "My very own GitHub page",
   "main": "index.html",
   "dependencies": {
-    "craftyjs": "^0.7.1",
-    "http-server": "^0.9.0"
+    "phaser": "^3.11.0"
   },
   "scripts": {
-    "start": "http-server -a 127.0.0.1 -p 8080",
-    "build": "cp node_modules/craftyjs/dist/crafty-min.js src/lib/",
-    "clean": "git clean -f src/lib"
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -21,5 +19,13 @@
   "bugs": {
     "url": "https://github.com/ixth/ixth.github.io/issues"
   },
-  "homepage": "https://ixth.github.io/"
+  "homepage": "https://ixth.github.io/",
+  "devDependencies": {
+    "file-loader": "^1.1.11",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.16.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  }
 }
