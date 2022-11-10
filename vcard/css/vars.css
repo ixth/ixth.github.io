@@ -1,0 +1,5 @@
+:root {
+    --text: #2b2c21;
+    --link-color: var(--text);
+    --card-background: #90908c; /* it's not “bone” 🙄 */
+}

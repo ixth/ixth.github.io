@@ -1,0 +1,98 @@
+.card {
+    width: 7in;
+    height: 4in;
+    box-sizing: border-box;
+    padding: .52in .44in .21in .22in;
+
+    background: var(--card-background);
+    color: var(--text);
+    font: 20pt 'Sillian Rail', serif;
+
+    transform: rotate(-1.4deg);
+}
+
+    .card a {
+        text-decoration: none;
+    }
+
+    .card__company {
+        line-height: .8em;
+        text-align: center;
+    }
+
+    .card__company-subtitle {
+        font-size: .65em;
+    }
+
+    .card__surname {
+        text-transform: uppercase;
+    }
+
+    .card__full-name,
+    .card__title {
+        margin: 0;
+        font-weight: normal;
+    }
+
+    .card__full-name {
+        font-size: 1em;
+        margin-bottom: .4ex;
+    }
+
+    .card__title {
+        font-size: .9em;
+        text-transform: capitalize;
+    }
+
+    .card__address {
+        font-size: .7em;
+        text-align: center;
+    }
+
+.card_shadow {
+    box-shadow: -0.1em 0 0.25em rgba(0, 0, 0, .1);
+}
+
+.card_layout_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 1em .5fr .5fr 1.5em;
+    grid-template-areas:
+        "phone phone company company"
+        "name name name name"
+        "title title title title"
+        "footer footer footer footer"
+}
+
+    .card_layout_grid .card__phone,
+    .card_layout_grid .card__company {
+        align-self: baseline;
+    }
+
+    .card_layout_grid .card__phone {
+        grid-area: phone;
+        justify-self: start;
+    }
+
+    .card_layout_grid .card__company {
+        grid-area: company;
+        justify-self: end;
+    }
+
+    .card_layout_grid .card__full-name {
+        grid-area: name;
+        align-self: end;
+        justify-self: center;
+    }
+
+    .card_layout_grid .card__title {
+        grid-area: title;
+        align-self: start;
+        justify-self: center;
+    }
+
+    .card_layout_grid .card__address {
+        grid-area: footer;
+        justify-self: center;
+        align-self: end;
+    }

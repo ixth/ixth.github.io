@@ -1,0 +1,11 @@
+:root {
+    --shadow-top: -.25px -.25px .75px rgb(0, 0, 0, .5);
+    --shadow-bottom: .25px .25px .75px rgb(255, 255, 255, .5);
+}
+
+.embossed {
+    text-shadow: var(--shadow-top), var(--shadow-bottom);
+}
+    .embossed svg {
+        filter: drop-shadow(var(--shadow-top)) drop-shadow(var(--shadow-bottom));
+    }
