@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Sillian Rail';
+    src: local('Sillian Rail'),
+         url('./Sillian Rail Regular.woff2') format('woff2'),
+         url('./Sillian Rail Regular.woff') format('woff');
+    font-style: normal;
+}
