@@ -1,6 +1,10 @@
 :root {
     --shadow-top: -.25px -.25px .75px rgb(0, 0, 0, .5);
-    --shadow-bottom: .25px .25px .75px rgb(255, 255, 255, .5);
+    --shadow-bottom: .25px .25px .75px rgb(255, 255, 255, .7);
+}
+
+.embossed_overexposed {
+    --shadow-bottom: .5px .5px 2px rgb(255, 255, 255, .5);
 }
 
 .embossed {

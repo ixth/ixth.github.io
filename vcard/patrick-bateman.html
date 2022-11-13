@@ -5,9 +5,20 @@
     <title>Patrick Bateman</title>
     <link rel="preload" type="font/woff2" as="font" href="css/fonts/Sillian%20Rail%20Regular.woff2"/>
     <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <style>
+        .card__mergers {
+            letter-spacing: .04em;
+        }
+        .card__aquisitions {
+            letter-spacing: .03em;
+        }
+        .card__address {
+            white-space: nowrap;
+        }
+    </style>
 </head>
 <body class="page">
-    <div class="card card_layout_grid card_shadow embossed">
+    <div class="card card_layout_grid card_shadow card_typography embossed embossed_overexposed">
         <h1 class="card__full-name">
             <span class="card__name">Patrick</span>
             <span class="card__surname">Bateman</span>
@@ -16,8 +27,11 @@
         <h2 class="card__title">Vice president</h2>
 
         <div class="card__company">
-            <div class="card__company-title">Pierce&nbsp;&thinsp;<small>&amp;</small>&thinsp;Pierce</div>
-            <div class="card__company-subtitle">Mergers and Aquisitions</div>
+            <div class="card__company-title">Pierce&nbsp;<small>&amp;</small>Pierce</div>
+            <div class="card__company-subtitle">
+                <span class="card__mergers">Mergers</span>
+                <span class="card__aquisitions">and Aquisitions</span>
+            </div>
         </div>
 
         <a href="tel:+12125556342" class="card__phone">
@@ -26,10 +40,10 @@
 
         <div class="card__address">
             358 Exchange Place
-            New&nbsp;York, N.Y.
+            New York, N.Y.
             10099
-            fax&nbsp;212&nbsp;555&nbsp;6390
-            telex&nbsp;10&nbsp;4534
+            fax 212&#x200a;555&#x200a;6390
+            telex 10&#x200a;4534
         </div>
     </div>
 </body>

@@ -9,6 +9,10 @@ a {
     color: var(--link-color);
 }
 
+small {
+    font-size: .7em;
+}
+
 html, body {
     height: 100%;
 }
