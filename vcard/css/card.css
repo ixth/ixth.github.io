@@ -1,7 +1,8 @@
 .card {
+    box-sizing: border-box;
+
     width: 7in;
     height: 4in;
-    box-sizing: border-box;
     padding: .52in .44in .21in .22in;
 
     background: var(--card-background);
@@ -20,16 +21,11 @@
         text-align: center;
     }
 
-    .card__company-title {
-        font-weight: bold;
-    }
-
     .card__company-subtitle {
         font-size: .65em;
     }
 
     .card__surname {
-        font-weight: bold;
         text-transform: uppercase;
     }
 
@@ -47,12 +43,10 @@
     .card__title {
         font-size: .9em;
         text-transform: capitalize;
-        font-weight: bold;
     }
 
     .card__address {
         font-size: .7em;
-        font-weight: bold;
         text-align: center;
     }
 
@@ -123,4 +117,22 @@
 
 .card_typography .card__title {
     letter-spacing: .055em;
+}
+
+@media only screen and (min-width: 761px) {
+    .card__title,
+    .card__address,
+    .card__surname,
+    .card__company-title {
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .card {
+        width: 3.5in;
+        height: 2in;
+        padding: .26in .22in .105in .11in;
+        font-size: 10pt;
+    }
 }
