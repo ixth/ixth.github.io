@@ -1,0 +1,24 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//macOS 13.0//EN
+N:Mikhail;Menshikov;;;
+FN:Mikhail Menshikov
+TITLE:Frontend Web Developer
+NICKNAME:ixth
+BDAY:1987-12-09
+SOURCE:https://ixth.net/mikhail-menshikov.vcf
+EMAIL;type=INTERNET;type=HOME;type=pref:ainop@ya.ru
+TZ:Europe/Podgorica
+item1.TEL;type=pref:+382 68 639996
+item1.X-ABLabel:Montenegro
+item2.URL:tg://resolve?domain=vanilla_ixth
+item2.X-ABLabel:Telegram
+item3.URL:https://www.linkedin.com/in/iamixth/
+item3.X-ABLabel:LinkedIn
+item4.URL:https://github.com/ixth
+item4.X-ABLabel:GitHub
+item5.URL;type=pref:https://ixth.net/
+item6.X-ABLabel:_$!<HomePage>!$_
+item7.ADR;type=HOME;type=pref:;;Ivanovica\, 3;Ðenovići;Herceg-Novi;85345;Herceg-Novi\, Montenegro
+item7.X-ABADR:Montenegro
+END:VCARD
