@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es2019",
+    "esModuleInterop": true,
+    "inlineSourceMap": true,
+    "jsx": "react",
+    "lib": [
+      "es2019",
+      "dom",
+      "dom.iterable"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "declaration": false,
+    "strict": true,
+    "strictNullChecks": true,
+    "noEmit": false
+  },
+  "exclude": ["node_modules"],
+}

@@ -1,0 +1,18 @@
+@import url('fonts/Sillian Rail Regular.css');
+@import url('normalize.css');
+@import url('vars.css');
+@import url('page.css');
+@import url('card.css');
+@import url('embossed.css');
+
+a {
+    color: var(--link-color);
+}
+
+small {
+    font-size: .7em;
+}
+
+html, body {
+    height: 100%;
+}

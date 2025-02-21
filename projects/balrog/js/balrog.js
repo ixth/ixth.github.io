@@ -108,7 +108,7 @@ Crafty.c('Balrog', {
     },
 
     initSprite: function() {
-        Crafty.sprite(160, 96, '/i/balrog.png', {
+        Crafty.sprite(160, 96, './i/balrog.png', {
             BalrogSprite: [0, 0]
         });
 
